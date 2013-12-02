@@ -5,27 +5,85 @@
 .container {
 	background: lightpink;
 	margin: 0 auto;
-	width: 960px;
+	width: 95%; /*960px*/
+	max-width: 95%;
 	
 	}
 
 nav {
 	background: pink;
-	width: 960px;
+	width: 100%; /* 960px / 960px = 100% */
 	}
 article {
 	background: cyan;
 	float: left;
-	width: 640px;
+	width: 66.666666666%; /* 640px / 960px = 66.666666666% */
 	}
 	
 aside {
 	background: lightyellow;
 	float: left;
-	width: 320px;}
+	width: 33.333333333%; /* 320px / 960px = 33.333333333%*/ }
 	
 footer {
 	background: lightgreen;
 	clear: both;
-	width: 960px;
+	width: 100%;
 	}
+	
+/*typography*/
+
+h1 {
+	font-size: 3em; /* 48px 16px = 3em*/
+		}
+
+h2 {
+	font-size: 2.25em; /*36px 16px = 2.25em */
+	}
+
+h3 {
+	
+	font-size: 1.5em; /*24px 16px = 1.5em*/
+	}
+	
+p {
+	font-size: 1.25em; /* 20px */
+	line-height: 1.25em; /* 20px */
+		}
+	
+	/* ALL links */
+	
+a {
+	color: #F00;
+	font-size: 1.25em; /*20px*/
+	}
+
+footer a{
+	font-size: 1em; /*20px*/
+	}
+	
+
+/* Desktop */
+
+@media screen and (max-width: 1024px) {
+	body {
+		background: red;
+		}
+	} /*end of desktop */
+	
+
+/* tablet */
+
+@media screen and (max-width: 768px) {
+	body {
+		background: green;
+		}
+	} /*end of tablet */
+
+/*Phone */
+
+@media screen and (max-width: 480px) {
+	body {
+		background: blue;
+		}
+	} /*end of tablet */
