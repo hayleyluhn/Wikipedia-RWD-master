@@ -86,4 +86,8 @@ footer a{
 	body {
 		background: blue;
 		}
+		
+		aside {
+			float: none;
+			}
 	} /*end of tablet */
